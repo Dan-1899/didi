@@ -104,7 +104,6 @@ body {
 
 .threeoptions {
 	display: flex;
-	background: rgb(255, 199, 183);
 	margin: 10px 0 0 20px;
 	width: 65%;
 	gap: 10%;
