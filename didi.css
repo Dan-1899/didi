@@ -93,26 +93,42 @@ body {
 
 .principal-section {
 	display: flex;
-	width: 87%;
+	align-items: center;
+	width: 85%;
 	margin: 45px auto;
+	gap: 80px;
 }
 
-.principal-section p {
+.principal-section > h3 {
 	font-size: 28px;
 	font-weight: bold;
 }
 
 .threeoptions {
 	display: flex;
-	margin: 10px 0 0 20px;
-	width: 65%;
-	gap: 10%;
+	gap: 20px;
 }
 
-.threeoptions button {
-	border: none;
+.tab-button {
+	display: block;
+	width: max-content;
+	padding: 15px 10px;
+	border-radius: 5px;
+	transition: .4s;
+	background-color: #FFFFFF;
+	font-size: .8rem;
+	color: #000000;
 }
 
+.tab-button:hover, .tab-button:focus, .tab-button.active{
+	background-color: #FFECE4;
+	color: #FF7D41;
+	font-weight: bold;
+}
+
+.active {
+	border: 1px solid #1eff00;
+}
 
 .menusection {
 	width: 85%;
@@ -133,6 +149,7 @@ body {
 .card-restaurant {
 	flex: 1;
 	max-width: calc(25% - 36px);
+	min-width: calc(25% - 36px);
 	background-color: #FFFFFF;
 	list-style: none;
 	padding: 10px;
@@ -140,6 +157,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+	transition: .4s;
+	cursor: pointer;
+}
+
+.card-restaurant:hover {
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+	transform: translateY(-5px);
 }
 
 .card-restaurant img {
